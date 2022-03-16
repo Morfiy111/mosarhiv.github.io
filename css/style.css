@@ -1,14 +1,24 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+a, button {
+    transition: all .3s linear;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
 .header-page {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-background {
     background-image: url('../images/header_back.png');
-    background-size: 100%;
-    padding: 20px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px 40px;
     position: relative;
 }
 .header-logo a{
@@ -22,6 +32,10 @@ body {
 }
 .header-logo {
     position: relative;
+    width: 230px;
+}
+.header-logo-white a {
+    color: #fff;
 }
 .logo-img-block img {
     display: block;
@@ -35,6 +49,11 @@ body {
 }
 .nav-item a {
     color: #fff;
+    border-bottom: 2px solid transparent;
+}
+.nav-item a:hover, .nav-item a:focus {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 .button-page-item {
     color: #0f3a4b;
@@ -43,6 +62,10 @@ body {
     border: 2px solid #fff;
     padding: 4px 20px;
 }
+.button-page-item:hover {
+    color: #fff;
+    background-color: transparent;
+}
 .overlay-black {
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -50,4 +73,43 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+}
+.main-title, .sub-mine-title {
+    color: #fff;
+    position: relative;
+    width: 533px;
+    margin-bottom: 20px;
+}
+.sub-mine-title {
+    margin-bottom: 40px;
+}
+.main-title {
+    margin-top: 33%;
+}
+.navbar-nav {
+    margin-right: 60px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+@media(max-width: 1199px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+@media(max-width: 991px) {
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+    .navbar-nav {
+        margin-right: 30px;
+        justify-content: flex-end;
+    }
+}
+@media(max-width: 767px) {
+    .main-title, .sub-mine-title {
+        width: 100%;
+    }
 }
