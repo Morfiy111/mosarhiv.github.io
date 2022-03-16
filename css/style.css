@@ -37,6 +37,12 @@ a:focus, a:hover {
 .header-logo-white a {
     color: #fff;
 }
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
 .logo-img-block img {
     display: block;
     width: 100%;
@@ -110,6 +116,28 @@ a:focus, a:hover {
 }
 @media(max-width: 767px) {
     .main-title, .sub-mine-title {
+        width: 100%;
+    }
+    .navbar-toggler {
+        padding: 8px;
+        border: 2px solid #fff;
+        top: -60px;
+        position: absolute;
+    }
+    .navbar-toggler .icon-bar {
+        background-color: #fff;
+        margin: 4px 0;
+    }
+    .navbar {
+        justify-content: end;
+    }
+    .header-background {
+        padding: 20px;
+    }
+    .header-page {
+        flex-wrap: wrap;
+    }
+    .navbar {
         width: 100%;
     }
 }
