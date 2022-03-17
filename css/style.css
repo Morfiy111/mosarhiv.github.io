@@ -105,6 +105,7 @@ a:focus, a:hover {
 .main-about-block {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 .subtitle-about {
     font-weight: bold;
@@ -166,10 +167,16 @@ a:focus, a:hover {
     height: 18px;
     width: 18px;
 }
+.about-block-num-item:last-child {
+    border-bottom: 1px solid #0f3a4b;
+}
 @media(max-width: 1199px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+    .about-block-text {
+        width: 46%;
     }
 }
 @media(max-width: 991px) {
@@ -206,5 +213,20 @@ a:focus, a:hover {
     }
     .navbar {
         width: 100%;
+    }
+    .main-about-block {
+        flex-wrap: wrap;
+    }
+    .about-block-text, .about-block-numbers {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 500px) {
+    .about-block-num-item-bold, .about-block-num-item-text {
+        width: 49%;
+    }
+    .about-block-num-item {
+        justify-content: space-between;
     }
 }
