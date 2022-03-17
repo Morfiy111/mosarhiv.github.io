@@ -110,6 +110,8 @@ a:focus, a:hover {
 .subtitle-about {
     font-weight: bold;
     color: #0f3a4b;
+    font-size: 3rem;
+    margin-bottom: 40px;
 }
 .subtitle-about-text {
     color: #8d8d8d;
@@ -173,6 +175,7 @@ a:focus, a:hover {
 .grey-block {
     background-color: #0f3a4b;
     padding: 40px 0;
+    margin-bottom: 60px;
 }
 .subtitle-white {
     color: #fff;
