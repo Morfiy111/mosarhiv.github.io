@@ -257,12 +257,15 @@ main {
     font-size: 0;
     width: 100%;
     color: #fff;
+    display: flex;
+    height: 430px;
 }
 .accordion label {
     margin: 0;
     font-weight: inherit;
     height: 100%;
     display: inline-block;
+    width: 100%;
 }
 .accordion input[name="accordion"] {
     display: none;
@@ -272,12 +275,13 @@ main {
     overflow: hidden;
     height: 100%;
     font-size: 14px;
+    width: 100%;
 }
 .accordion .item__container {
     cursor: pointer;
     position: relative;
     transition: width 0.3s cubic-bezier(0.55, 0, 0.1, 1), background-color 0.3s cubic-bezier(0.55, 0, 0.1, 1), padding 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-    width: 160px;
+    width: 100%;
     height: 100%;
     padding: 0;
     border: 1px solid #8d8d8d;
@@ -298,6 +302,11 @@ main {
     margin: 0;
     font-weight: bold;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.accordion input[name="accordion"]:checked + .item__container .item__icon i.fa {
+    transform: rotate(180deg);
 }
 .accordion .item__icon i.fa {
     font-size: 30px;
@@ -326,6 +335,7 @@ main {
     white-space: nowrap;
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     transform: translateY(40px);
+    display: none;
 }
 .accordion .item__footer a {
     color: #fff;
@@ -337,7 +347,7 @@ main {
 .accordion input[name="accordion"]:checked + .item__container {
     cursor: default;
     width: 484px;
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     background: #0f3a4b;
 }
 .item__description img {
@@ -354,12 +364,24 @@ main {
     opacity: 1;
     transform: translateY(0px);
     transition-delay: 0.2s;
+    height: 300px;
+    overflow-y: auto;
 }
 .accordion input[name="accordion"]:checked + .item__container .item__footer {
     transform: translateY(0);
     transition-delay: 0.25s;
+    display: block;
 }
-  
+.accordion .item__footer .main-page-btn {
+    color: #0f3a4b;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+}
+.accordion .item__footer .main-page-btn:hover {
+    background-color: #0f3a4b;
+    color: #fff;
+}
 @media(max-width: 1199px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
@@ -367,6 +389,12 @@ main {
     }
     .about-block-text {
         width: 46%;
+    }
+    .accordion input[name="accordion"]:checked + .item__container {
+        width: 400px;
+    }
+    .accordion .item__container {
+        padding: 15px;
     }
 }
 @media(max-width: 991px) {
@@ -391,6 +419,9 @@ main {
         grid-column-start: 1;
         grid-row-end: 3;
         grid-column-end: 3;
+    }
+    .accordion input[name="accordion"]:checked + .item__container {
+        width: auto;
     }
 }
 @media(max-width: 767px) {
@@ -425,6 +456,31 @@ main {
     .about-block-text, .about-block-numbers {
         width: 100%;
         margin-bottom: 40px;
+    }
+    .accordion-gorizontal {
+        flex-direction: column;
+        overflow: auto;
+    }
+    .accordion .item__container .item__description {
+        display: none;
+    }
+    .accordion input[name="accordion"]:checked + .item__container .item__description {
+        display: block;
+    }
+    .accordion .item-gorizontal {
+        overflow: inherit;
+    }
+    .accordion .item__header {
+        transform: translateY(0);
+    }
+    .accordion .item__icon i.fa {
+        transform: rotate(90deg);
+    }
+    .accordion input[name="accordion"]:checked + .item__container .item__icon i.fa {
+        transform: rotate(-90deg);
+    }
+    .accordion input[name="accordion"]:checked + .item__container .item__description {
+        overflow: inherit;
     }
 }
 @media(max-width: 500px) {
