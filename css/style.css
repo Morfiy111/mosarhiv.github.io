@@ -382,6 +382,7 @@ main {
     background-color: #0f3a4b;
     color: #fff;
 }
+
 @media(max-width: 1199px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
