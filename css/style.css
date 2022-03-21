@@ -846,6 +846,34 @@ main {
     font-size: 22px;
     margin: 0 6px;
 }
+.owl-feedback-form input, .owl-feedback-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: 1px solid rgba(122, 122, 122, 0.25);
+    border-radius: 2px;
+}
+.owl-feedback-form a {
+    background-color: #0f3a4b;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #0f3a4b;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+}
+.owl-feedback-form a:hover {
+    background-color: #fff;
+    color: #0f3a4b;
+}
+button.btn-close {
+    font-size: 16px;
+    z-index: 1;
+    right: 15px;
+    top: 7px;
+    position: absolute;
+}
 @media(max-width: 1199px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
