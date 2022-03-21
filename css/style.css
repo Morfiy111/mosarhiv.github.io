@@ -656,6 +656,8 @@ main {
     right: 0;
     left: 0;
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 .grey-block-page { 
     background-color: #f4f5f7;
@@ -749,6 +751,9 @@ main {
     .accordion .item__container {
         padding: 15px;
     }
+    .job-full-btns {
+        width: 49%;
+    }    
 }
 @media(max-width: 991px) {
     .navbar-nav {
@@ -782,6 +787,13 @@ main {
     .press-block-item {
         width: 48%;
         margin-bottom: 20px;
+    }
+    .job-full-btns-flex {
+        width: 49%;
+        align-items: flex-start;
+    }
+    .job-full-btns-flex img {
+        width: 40%;
     }
 }
 @media(max-width: 767px) {
@@ -842,6 +854,19 @@ main {
     .accordion input[name="accordion"]:checked + .item__container .item__description {
         overflow: inherit;
     }
+    .job-main-block, .job-moin-links {
+        flex-wrap: wrap;
+    }
+    .job-main-item, .job-full-btns {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .job-main-block {
+        margin-bottom: 0;
+    }
+    .subtitle-about {
+        font-size: 2rem;
+    } 
 }
 @media(max-width: 500px) {
     .about-block-num-item-bold, .about-block-num-item-text {
