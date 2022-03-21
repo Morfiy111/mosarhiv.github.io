@@ -721,6 +721,7 @@ main {
 .job-block-full {
     padding: 20px;
     background-color: #f4f5f7;
+    margin-bottom: 60px
 }
 .job-full-btns {
     width: 40%;
