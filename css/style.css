@@ -389,6 +389,7 @@ main {
     align-items: center;
     background-color: #fff;
     flex-direction: column;
+    margin-bottom: 60px;
   }
   
   .title {
@@ -655,6 +656,10 @@ main {
     right: 0;
     left: 0;
     width: 100%;
+}
+.grey-block-page { 
+    background-color: #f4f5f7;
+    padding: 40px 0;
 }
 @media(max-width: 1199px) {
     .navbar-expand-md .navbar-nav .nav-link {
