@@ -660,6 +660,80 @@ main {
 .grey-block-page { 
     background-color: #f4f5f7;
     padding: 40px 0;
+    margin-bottom: 60px;
+}
+.press-block-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.press-block-item {
+    width: 24%;
+}
+.press-block-img img {
+    width: 100%;
+}
+.press-block-date {
+    color: #8d8d8d;
+    margin: 15px 0;
+}
+.press-block-title a {
+    color: #0f3a4b;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.press-block-title a:hover {
+    border-bottom: 1px solid #0f3a4b;
+}
+.job-main-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+} 
+.job-main-item {
+    padding: 20px;
+    background-color: #f4f5f7;
+    width: 49%;
+}
+.job-moin-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.job-moin-links span {
+    color: #0f3a4b;
+    font-weight: bold;
+}
+.job-btn {
+    border: none;
+    background: transparent;
+    color: #0f3a4b;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+.job-btn:hover {
+    border-bottom: 1px solid #0f3a4b;
+    color: #0f3a4b;
+}
+.job-block-full {
+    padding: 20px;
+    background-color: #f4f5f7;
+}
+.job-full-btns {
+    width: 40%;
+}
+.job-full-btns-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.job-full-btns-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.job-full-btns-flex img {
+    width: 250px;
 }
 @media(max-width: 1199px) {
     .navbar-expand-md .navbar-nav .nav-link {
@@ -701,6 +775,13 @@ main {
     }
     .accordion input[name="accordion"]:checked + .item__container {
         width: auto;
+    }
+    .press-block-flex {
+        flex-wrap: wrap;
+    }
+    .press-block-item {
+        width: 48%;
+        margin-bottom: 20px;
     }
 }
 @media(max-width: 767px) {
@@ -779,5 +860,8 @@ main {
         padding: 0;
         border: 0;
         margin-bottom: 15px;
+    }
+    .press-block-item {
+        width: 100%;
     }
 }
